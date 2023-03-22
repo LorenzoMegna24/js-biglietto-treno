@@ -34,14 +34,19 @@
   console.log(prezzo);
 
   if( eta<18 ){
-    document.writeln(prezzo*0.2 + "€")
+    let prezzoMinore = prezzo*0.2;
+    document.getElementById("prezzofinale").innerHTML = prezzoMinore.toFixed(2) + '€';
+
     console.log(prezzo*0.2);
+
   }else if( eta>65 ){
-    document.writeln(prezzo*0.4 + "€")
+    let prezzoOver = prezzo*0.4;
+    document.getElementById("prezzofinale").innerHTML = prezzoOver.toFixed(2) + '€';
+
     console.log(prezzo*0.4);
   }else{
-    document.writeln(prezzo)
-    console.log(prezzo)
+    document.getElementById("prezzofinale").innerHTML = prezzo.toFixed(2) + '€';
+    console.log(prezzo);
   }
 
  }
