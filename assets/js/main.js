@@ -34,16 +34,16 @@
   console.log(prezzo);
 
   if( eta<18 ){
-    let prezzoMinore = prezzo*0.2;
+    let prezzoMinore = prezzo*0.8;
     document.getElementById("prezzofinale").innerHTML = prezzoMinore.toFixed(2) + '€';
 
-    console.log(prezzo*0.2);
+    console.log(prezzo*0.8);
 
   }else if( eta>65 ){
-    let prezzoOver = prezzo*0.4;
+    let prezzoOver = prezzo*0.6;
     document.getElementById("prezzofinale").innerHTML = prezzoOver.toFixed(2) + '€';
 
-    console.log(prezzo*0.4);
+    console.log(prezzo*0.6);
   }else{
     document.getElementById("prezzofinale").innerHTML = prezzo.toFixed(2) + '€';
     console.log(prezzo);
